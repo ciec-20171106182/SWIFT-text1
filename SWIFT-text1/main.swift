@@ -7,23 +7,10 @@
 //
 
 import Foundation
-
-
-
-var c:[Int]=[1,4,3,2,6,5,9]
-for i in 0..<c.count
+var sum=0
+for i in 0...100
 {
-    for j in 1..<c.count-i
-    {
-        if(c[j]>c[j-1])
-        {
-            let t=c[j]
-            c[j]=c[j-1]
-            c[j-1]=t
-        }
-    }
+    sum+=i
 }
-for x in 0..<c.count
-{
-    print(c[x])
-}
+print(sum)
+
